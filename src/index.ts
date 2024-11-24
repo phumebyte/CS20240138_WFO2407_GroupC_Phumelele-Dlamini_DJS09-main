@@ -136,14 +136,14 @@ function addReviews(array: Review[]): void {
 
 button?.addEventListener("click", () => addReviews(reviews));
 // Replaced with my location, current time and current temperature
-let currentLocation: [string, string, number] = ["Newcastle", "12.02", 31];
+const currentLocation: [string, string, number] = ["Newcastle", "12.02", 31];
 footer!.innerHTML =  currentLocation[0] +  " " +
   currentLocation[1] +
   " " +
   currentLocation[2] +
   "°C";
 
-let yourMainProperty = new MainProperty(
+const yourMainProperty = new MainProperty(
   "/images/italian-property.jpg",
   "Italian House",
   [
